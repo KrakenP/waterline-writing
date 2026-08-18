@@ -4,7 +4,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RESEARCH = ROOT.parents[1] / "research"
 required = ["README.md","SKILL.md","manifest.json","examples/physical-ai.md"]
 shared_required = ["platform-playbook.md","benchmark-findings.md","source-ledger.md","compliance-cn.md"]
-missing=[x for x in required if not (ROOT/x).exists()]
+missing=[x for x in required if not (ROOT/x).exists()] + [f"../../research/{x}" for x in shared_required if not (RESEARCH/x).exists()]
 if missing: raise SystemExit("Missing: "+", ".join(missing))
 skill=(ROOT/"SKILL.md").read_text(encoding="utf-8")
 if not skill.startswith("---\n") or "\nname:" not in skill or "\ndescription:" not in skill: raise SystemExit("bad SKILL front matter")
