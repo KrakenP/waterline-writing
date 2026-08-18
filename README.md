@@ -30,13 +30,18 @@ waterline-writing/
 │   ├── waterline-finance-story/
 │   └── waterline-researcher-voice/
 └── research/
-    ├── benchmark-accounts-2026-08.csv
+    ├── benchmark-accounts/
+    │   ├── douyin.csv
+    │   ├── xiaohongshu.csv
+    │   ├── bilibili.csv
+    │   ├── wechat.csv
+    │   ├── xueqiu.csv
+    │   └── weibo.csv
     ├── benchmark-findings.md
     ├── platform-playbook.md
     ├── creator-benchmark-report.md
     ├── source-ledger.md
-    ├── compliance-cn.md
-    └── waterline-finance-creator-benchmark-2026-08.md
+    └── compliance-cn.md
 ```
 
 ## Validation
