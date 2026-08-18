@@ -1,0 +1,19 @@
+{
+  "name": "waterline-research-authority",
+  "version": "0.1.0",
+  "description": "Transform eligible Waterline research into high-trust, evidence-first finance content for research-brand authority without changing upstream claims or providing unlicensed investment advice.",
+  "entrypoint": "SKILL.md",
+  "language": [
+    "zh-CN",
+    "en"
+  ],
+  "input": [
+    "master_research",
+    "platform",
+    "goal",
+    "audience",
+    "as_of"
+  ],
+  "output_authority": "draft-only",
+  "benchmark_as_of": "2026-08-18"
+}
