@@ -2,7 +2,7 @@
 
 Turn research into content that makes followers say: **“我想继续看这个研究员怎么想。”** Trust comes from showing a real reasoning process, including what changed and what remains uncertain.
 
-This standalone repo consumes the **same Waterline Master Research** as the other social Skills while producing a different audience contract. Facts and uncertainty stay fixed; packaging changes.
+This Skill lives inside `waterline-writing` and consumes the **same Waterline Master Research** as the other writing Skills while producing a different audience contract. Facts and uncertainty stay fixed; packaging changes.
 
 ## Files
 - `SKILL.md` — executable editorial instructions
