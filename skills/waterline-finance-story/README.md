@@ -2,7 +2,7 @@
 
 Turn research into content that makes a broad audience say: **“原来这件事是这么回事。”** Reach comes from narrative tension and explanation, not weaker factual standards.
 
-This standalone repo consumes the **same Waterline Master Research** as the other social Skills while producing a different audience contract. Facts and uncertainty stay fixed; packaging changes.
+This Skill lives inside `waterline-writing` and consumes the **same Waterline Master Research** as the other writing Skills while producing a different audience contract. Facts and uncertainty stay fixed; packaging changes.
 
 ## Files
 - `SKILL.md` — executable editorial instructions
