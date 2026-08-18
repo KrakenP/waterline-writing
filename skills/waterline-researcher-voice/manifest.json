@@ -1,19 +1,11 @@
 {
   "name": "waterline-researcher-voice",
-  "version": "0.1.0",
-  "description": "Transform eligible Waterline research into first-person research-process content that builds trust through changing hypotheses, evidence and open questions without fabricating personal experience.",
+  "version": "0.2.0",
+  "description": "Transform eligible Waterline research or a frozen Truth Pack into first-person research-process content without fabricating personal experience.",
   "entrypoint": "SKILL.md",
-  "language": [
-    "zh-CN",
-    "en"
-  ],
-  "input": [
-    "master_research",
-    "platform",
-    "goal",
-    "audience",
-    "as_of"
-  ],
+  "language": ["zh-CN", "en"],
+  "input_one_of": ["master_research", "truth_pack"],
+  "input": ["platform", "goal", "audience", "as_of"],
   "output_authority": "draft-only",
   "benchmark_as_of": "2026-08-18"
 }

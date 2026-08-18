@@ -1,19 +1,11 @@
 {
   "name": "waterline-research-authority",
-  "version": "0.1.0",
-  "description": "Transform eligible Waterline research into high-trust, evidence-first finance content for research-brand authority without changing upstream claims or providing unlicensed investment advice.",
+  "version": "0.2.0",
+  "description": "Transform eligible Waterline research or a frozen Truth Pack into high-trust, evidence-first finance content without changing upstream claims or providing unlicensed investment advice.",
   "entrypoint": "SKILL.md",
-  "language": [
-    "zh-CN",
-    "en"
-  ],
-  "input": [
-    "master_research",
-    "platform",
-    "goal",
-    "audience",
-    "as_of"
-  ],
+  "language": ["zh-CN", "en"],
+  "input_one_of": ["master_research", "truth_pack"],
+  "input": ["platform", "goal", "audience", "as_of"],
   "output_authority": "draft-only",
   "benchmark_as_of": "2026-08-18"
 }
