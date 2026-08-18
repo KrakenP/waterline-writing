@@ -10,27 +10,27 @@ Turn research into content that makes followers say: **“我想继续看这个�
 
 ## Executable boundary
 This Skill is an **editorial transformation layer downstream of research**.
-- Accept eligible Master Research / claim packages and explicit source material.
+- Accept eligible Master Research / Truth Packs and explicit source material.
 - Do not silently browse to repair weak evidence unless the caller explicitly asks for fresh research.
 - Never upgrade confidence, remove material dissent, erase Unknowns, invent a source, fabricate first-person experience, or turn inference into fact.
 - Do not approve publication, portfolio action, allocation, or distribution. Output is a draft.
 - For time-sensitive claims, require an `as_of` date; if freshness is unknown, flag it.
 
-Read `../../research/platform-playbook.md`, `../../research/benchmark-findings.md`, and `../../research/compliance-cn.md`.
+Read `../../research/benchmark-findings.md`, `../../research/compliance-cn.md`, and the selected platform adapter under `../../platforms/`. Use `../../research/platform-playbook.md` only as cross-platform context.
 
 ## Input contract
-Required: `master_research`, `platform`, `goal`, `audience`, `as_of`.
+Required: `master_research` or `truth_pack`, `platform`, `goal`, `audience`, `as_of`.
 Optional: charts/tables/assets, prior published pieces, approved CTA, author identity + verified first-person facts, length/brand constraints.
 If facts are missing, emit `RESEARCH_GAP` rather than imagining them.
 
 ## Method
-1. **Extract the actual research journey:** starting hypothesis, evidence, contradictions, changed view, remaining questions.
+1. **Extract the actual research journey:** starting hypothesis, evidence, contradictions, changed view, remaining questions. If a Truth Pack is supplied, treat it as frozen for this generation run.
 2. **First-person integrity gate:** “我” may describe only a real research action/view in the input. Never invent trades, positions, meetings, calls, emotions, travel, access or biography.
 3. **Lead with the change:** `我原来以为 X → 看了 Y 以后改成 Z`.
 4. **Show receipts:** 2–5 decisive evidence cards/charts.
 5. **Make Unknowns precise:** “还没想明白” must name the unresolved variable.
 6. **Invite counterevidence**, not generic engagement bait.
-7. **Adapt to platform** (Xiaohongshu/Weibo/Xueqiu defaults), then run compliance.
+7. **Adapt to platform** using the selected file under `../../platforms/`, then run compliance.
 
 ## Voice
 - First-person, thoughtful, specific, lightly conversational.
@@ -39,7 +39,7 @@ If facts are missing, emit `RESEARCH_GAP` rather than imagining them.
 - If authorship is ambiguous, use “Waterline 研究笔记 / 我们在这轮研究里” rather than inventing a personal biography.
 
 ## Output contract
-Return: `starting_view`; `what_changed`; 7 ranked `titles`; 3 `cover_text`; platform-native `post`; `receipts`; `still_unknown`; `next_questions`; `discussion_prompt`; `cta`; `compliance_flags`; `reuse_map`.
+Return the platform adapter's native package plus: `starting_view`; `what_changed`; ranked `titles`; `cover_text`; platform-native `post`; `receipts`; `still_unknown`; `next_questions`; `discussion_prompt`; `cta`; `compliance_flags`; `reuse_map`.
 
 ## Quality gate
 Every first-person statement is grounded; change-of-mind specific; receipts visible; real Unknowns remain; sounds like a working researcher not guru; discussion can elicit counterevidence; no personalised buy/sell guidance.

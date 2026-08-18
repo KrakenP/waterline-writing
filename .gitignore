@@ -1,0 +1,19 @@
+# Local secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Generated content
+outputs/
+
+# Local runtime/cache
+.DS_Store
+__pycache__/
+*.pyc
+.cache/
+
+# Editor / local harness state
+.kimi/
+.vscode/
+.idea/

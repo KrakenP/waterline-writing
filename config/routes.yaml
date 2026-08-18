@@ -1,0 +1,34 @@
+version: 1
+
+# Default style × platform routes. Users may override any route per request.
+routes:
+  wechat:
+    style: waterline-research-authority
+    platform_adapter: platforms/wechat.md
+
+  xiaohongshu:
+    style: waterline-researcher-voice
+    platform_adapter: platforms/xiaohongshu.md
+
+  xueqiu:
+    style: waterline-research-authority
+    platform_adapter: platforms/xueqiu.md
+
+  weibo:
+    style: waterline-researcher-voice
+    platform_adapter: platforms/weibo.md
+
+  douyin:
+    style: waterline-finance-story
+    platform_adapter: platforms/douyin.md
+
+  bilibili:
+    style: waterline-finance-story
+    platform_adapter: platforms/bilibili.md
+
+policy:
+  build_truth_pack_once: true
+  generate_each_platform_from_truth_pack: true
+  universal_article_then_rewrite: false
+  publish_authority: draft-only
+  model: inherit-current-harness-model

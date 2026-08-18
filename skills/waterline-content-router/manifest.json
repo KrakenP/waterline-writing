@@ -1,0 +1,11 @@
+{
+  "name": "waterline-content-router",
+  "version": "0.1.0",
+  "description": "Route one completed Waterline research package into one or more style × platform draft packages while preserving a shared truth state.",
+  "entrypoint": "SKILL.md",
+  "language": ["zh-CN", "en"],
+  "input": ["master_research", "as_of"],
+  "optional_input": ["platforms", "styles", "routes", "goal", "audience", "assets", "approved_cta"],
+  "output_authority": "draft-only",
+  "default_research_root_macos": "/Volumes/NAS/quant/Waterline-Research"
+}
