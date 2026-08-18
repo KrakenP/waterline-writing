@@ -2,7 +2,7 @@
 
 Turn a Master Research package into content that makes readers conclude: **“Waterline has done the work.”** The product is not a raw report; it is a readable, source-traceable research artifact.
 
-This standalone repo consumes the **same Waterline Master Research** as the other social Skills while producing a different audience contract. Facts and uncertainty stay fixed; packaging changes.
+This Skill lives inside `waterline-writing` and consumes the **same Waterline Master Research** as the other writing Skills while producing a different audience contract. Facts and uncertainty stay fixed; packaging changes.
 
 ## Files
 - `SKILL.md` — executable editorial instructions
